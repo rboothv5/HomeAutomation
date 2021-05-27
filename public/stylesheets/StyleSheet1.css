@@ -1,0 +1,480 @@
+﻿*{
+	margin:auto;
+}
+
+#main{
+	background-color:#669494;
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+
+#site_container{
+	position:relative;
+	width:635px;
+	margin-left:auto;
+	margin-right:auto;
+	height: 450px;
+	top:70px;
+	background-color: #22232c;
+}
+
+#siteheading_container{
+	position: relative;  
+	text-align:center;
+	color: floralwhite;
+	height:50px;
+	background-color:rgb(12, 85, 90);
+}
+
+#siteheading{
+	position:relative;
+	left:0px;
+	top:-15px;
+	font-size:32px;
+}
+
+#versionheading{
+	position:relative;
+	left:290px;
+	top:-55px;
+	font-size:12px;	
+}
+
+#functions_container{
+	position:relative;
+	width:150px;
+	left:-241px;
+	top:0px;
+	height:400px;
+	background-color: #384a4e;
+}
+
+#functionsList{
+ 	position:relative; 
+}    
+
+.liFunctions:hover, .liRefresh:hover{
+	text-decoration: none;
+	list-style-type:none;
+	background:#41485c;
+}
+
+.liFunctions{
+	position:relative;
+	list-style-type:none;
+	left:-40px; 
+	top:0px;
+	width:148px;
+	font-size:18px;
+	background-color: #386a79;
+	text-align:center;
+	border:1px solid white;
+}    
+
+.liRefresh{
+	position:relative;
+	list-style-type:none;
+	left:-40px; 
+	top:270px;
+	width:148px;
+	font-size:18px;
+	background-color: #386a79;
+	text-align:center;
+	border:1px solid white;
+}    
+
+a, a:visited, a:hover{
+	position:relative;
+	text-decoration: none;
+	color:white; 
+}
+
+.ui-slider .ui-slider-handle {
+	width:2em;
+	left:-.6em;
+	text-decoration:none;
+	text-align:center;
+}
+
+#house_container{
+	position:absolute;
+	width:483px;
+	height:400px;
+	left:150px;
+	top:50px;
+	background-color: #22232c;
+	background-image: linear-gradient(to bottom right, rgb(28, 42, 43), rgb(149, 159, 160));
+}
+
+#househeading_container{
+	position: relative;  
+	text-align:center;
+	font-size:22px;
+	color: floralwhite;
+	height:30px;
+	background-color:rgb(12, 85, 90);
+}
+
+#househeading{
+	position:relative;
+	font-size:22px;
+	color: floralwhite;
+}
+
+#lounge_container{
+	position:relative;
+	width:220px;
+	height:180px;
+	left:-110px;
+	top:20px;
+	background-color: #4e7688;
+	border:1px solid black;
+}
+
+#lounge_heading{
+	position:relative;
+	top:-15px;
+	color: floralwhite;
+}
+
+#loungeDimmer{
+	position:relative;
+	top:70px
+}
+
+#loungeDimmable_heading{
+	position:relative;
+	top:10px;
+	color:cornsilk;
+	left:90px;
+}
+
+#loungelightBulb{
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-100px;
+	left:0px;
+}
+
+#loungeDimValue{
+	position:relative;
+	top:-10px;
+	font-size:28px;
+	left:90px;
+	color:rgb(248, 219, 104);
+}
+
+#bedroom_container{
+	position:relative;
+	width:220px;
+	height:180px;
+	left:110px;
+	top:-160px;
+	background-color: #4e7688;
+	border:1px solid black;
+}
+			
+#bedroom_heading{
+	position:relative;
+	top:-15px;
+	color: floralwhite;
+}
+					
+#bedroomDimmer{
+	position:relative;
+	top:70px
+}
+					
+#bedroomDimmable_heading{
+	position:relative;
+	top:10px;
+	color:cornsilk;
+	left:90px;
+}
+					
+#bedroomlightBulb{
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-100px;
+	left:0px;
+}			
+
+#bedroomDimValue{
+	position:relative;
+	top:-10px;
+	font-size:28px;
+	left:90px;
+	color:rgb(248, 219, 104);
+}
+
+#passage_container{
+	position:relative;
+	width:220px;
+	height:180px;
+	left:-110px;
+	top:-160px;
+	background-color: #4e7688;
+	border:1px solid black;
+}
+
+#passage_heading{
+	position:relative;
+	top:-15px;	
+	color: floralwhite;
+}
+
+#passage{
+	position:relative;
+	top:100px;
+}
+
+#passagelightBulb{
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-190px;
+	left:0px;
+}
+
+#passageValue{
+	position:relative;
+	width:100px;
+	height:100px;
+	top:-45px;
+	left:90px;
+	font-size:26px;
+	color:rgb(248, 219, 104);
+}
+
+#passageSwitch{
+	position:relative;
+	left: 50px;
+	top:80px
+}
+
+#passagestatus_heading{
+
+	position:relative;
+	top:-35px;
+	color:cornsilk;
+	left:90px;
+}
+
+#spare_container
+{
+position:relative;
+width:220px;
+height:180px;
+left:110px;
+top:-340px;
+background-color: #4e7688;
+border:1px solid black;
+}
+
+#spare_heading{
+	position:relative;
+	top:-15px;
+	color: floralwhite;
+}
+
+#garden_container{
+	position:absolute;
+	width:483px;
+	height:400px;
+	left:150px;
+	top:50px;
+	background-color: #22232c;
+	background-image: linear-gradient(to bottom right, rgb(28, 42, 43), rgb(149, 159, 160));
+	z-index:2;
+}
+
+#gardenheading_container{
+	position: relative;  
+	text-align:center;
+	color: floralwhite;
+	height:20px;
+ 	background-color:rgb(12, 85, 90);
+}
+
+#gardenheading{
+	position:relative;
+	text-align:left;
+	font-size:16px;
+	color: floralwhite;
+	top:-25px;
+}
+
+#garage_container{
+	position:relative;
+	width:220px;
+	height:180px;
+	left:-110px;
+	top:20px;
+	background-color: #4e7688;
+	border:1px solid black;
+}
+
+#garage_heading{
+	position:relative;
+	top:-15px;
+	color: floralwhite;
+}
+
+#garage{
+	position:relative;
+	top:100px;
+}
+
+#garagelightBulb{
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-190px;
+	left:0px;
+}
+
+#garageValue{
+	position:relative;
+	width:100px;
+	height:100px;
+	top:-45px;
+	left:90px;
+	font-size:26px;
+	color:rgb(248, 219, 104);
+}
+
+#garageSwitch{
+	position:relative;
+	left: 50px;
+	top:80px
+}
+
+#garagestatus_heading{
+	position:relative;
+	top:-35px;
+	color:cornsilk;
+	left:90px;
+}
+
+#waterfeature_container{
+	position:relative;
+	width:220px;
+	height:180px;
+	left:110px;
+	top:-160px;
+	background-color: #4e7688;
+	border:1px solid black;
+}
+
+#waterfeature_heading{
+	position:relative;
+	top:-15px;
+	color: floralwhite;
+}
+
+#waterfeature{
+	position:relative;
+	top:100px;
+}
+															
+#waterfeaturelightBulb{
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-190px;
+	left:0px;
+}
+
+#waterfeatureValue{
+	position:relative;
+	width:100px;
+	height:100px;
+	top:-45px;
+	left:90px;
+	font-size:26px;
+	color:rgb(248, 219, 104);
+}
+
+#waterfeatureSwitch{
+	position:relative;
+	left: 50px;
+	top:80px
+}
+
+#waterfeaturestatus_heading{
+	position:relative;
+	top:-35px;
+	color:cornsilk;
+	left:90px;
+}
+
+#featurelights_container{
+	position:relative;
+	width:220px;
+	height:180px;
+	left:-110px;
+	top:-160px;
+	background-color: #4e7688;
+	border:1px solid black;
+}
+
+#featurelights_heading{
+	position:relative;
+	top:-15px;
+	color: floralwhite;
+}
+
+#featurelights{
+	position:relative;
+	top:100px;
+}
+																							
+#featurelightslightBulb{
+	position:relative;
+	width:80px;
+	height:80px;
+	top:-190px;
+	left:0px;
+}
+
+#featurelightsValue{
+	position:relative;
+	width:100px;
+	height:100px;
+	top:-45px;
+	left:90px;
+	font-size:26px;
+	color:rgb(248, 219, 104);
+}
+
+#featurelightsSwitch{
+	position:relative;
+	left: 50px;
+	top:80px
+}
+											
+#featurelightsstatus_heading{
+	position:relative;
+	top:-35px;
+	color:cornsilk;
+	left:90px;
+}
+
+#spare_container{
+	position:relative;
+	width:220px;
+	height:180px;
+	left:110px;
+	top:-340px;
+	background-color: #4e7688;
+	border:1px solid black;
+}
+
+#spare_heading{
+	position:relative;
+	top:-15px;
+	color: floralwhite;
+}

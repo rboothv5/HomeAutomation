@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/javascripts/myScript.js"></script>
+		<link rel='stylesheet' href='/stylesheets/stylesheet1.css' />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  </head>
+  <body>
+    <div id="main">
+      <div  id="site_container" class="panel panel-default">
+      	<div id="siteheading_container" class="panel-heading">
+          <h4 id="siteheading">Home Automation</h4>
+          <h4 id="versionheading">v1.0</h4>
+        </div>
+        <div  id="functions_container" class="panel panel-default">
+          <ul id="functionsList">
+            <li class="liFunctions"><a id="house" href="#">House</a></li>
+            <li class="liFunctions"><a id="garden" href="#">Garden</a></li>
+            <li class="liRefresh"><a id="Refresh" href="#">Refresh</a></li>
+          </ul>
+        </div>
+          
+        <div id="house_container" class="panel panel-default">
+        	<div id="lounge_container" class="panel-body">
+          	<h4 id="lounge_heading">Lounge</h4>
+            <h5 id=loungeDimmable_heading>Dimmable</h5>
+            <div id="loungeDimmer"></div>
+            <p id="loungeDimValue">0%</p>
+            <img id="loungelightBulb" src="/Images/lightBulb.png" alt="Light bulb"/>
+          </div>
+         <div id="bedroom_container" class="panel-body">
+          	<h4 id="bedroom_heading">Main Bedroom</h4>
+            <h5 id=bedroomDimmable_heading>Dimmable</h5>
+            <div id="bedroomDimmer"></div>
+            <p id="bedroomDimValue">0%</p>
+            <img id="bedroomlightBulb" src="/Images/lightBulb.png" alt="Light bulb"/>
+					</div>
+				  <div id="passage_container" class="panel-body">
+            <h4 id="passage_heading">Passage</h4>
+            <button id="passageSwitch" type="button" class="btn btn-info btn-small">Light ON</button>
+            <h5 id=passagestatus_heading>Status</h5>
+            <p id="passageValue">ON</p>
+            <img id="passagelightBulb" src="/Images/lightBulb.png" alt="Light bulb"/>
+          </div>
+					<div id="spare_container" class="panel-body">
+						<h4 id="spare_heading">Add Location</h4>
+					</div> 
+				</div>
+                
+        <div  id="garden_container" class="panel panel-default">
+      	  <div id="garage_container" class="panel-body">
+            <h4 id="garage_heading">Garage</h4>
+            <button id="garageSwitch" type="button" class="btn btn-info btn-small">Light ON</button>
+            <h5 id=garagestatus_heading>Status</h5>
+            <p id="garageValue">ON</p>
+            <img id="garagelightBulb" src="/Images/lightBulb.png" alt="Light bulb"/>
+          </div> 
+        	<div id="waterfeature_container" class="panel-body">
+          	<h4 id="waterfeature_heading">Water Feature</h4>
+          	<button id="waterfeatureSwitch" type="button" class="btn btn-info btn-small">Pump ON</button>
+          	<h5 id=waterfeaturestatus_heading>Status</h5>
+          	<p id="waterfeatureValue">ON</p>
+          	<img id="waterfeaturelightBulb" src="/Images/WaterFeature.png" alt="Water feature"/>
+        	</div> 
+     			<div id="featurelights_container" class="panel-body">
+        		<h4 id="featurelights_heading">Feature Lights</h4>
+        		<button id="featurelightsSwitch" type="button" class="btn btn-info btn-small">Light ON</button>
+        		<h5 id=featurelightsstatus_heading>Status</h5>
+        		<p id="featurelightsValue">ON</p>
+        		<img id="featurelightslightBulb" src="/Images/lightBulb.png" alt="Light bulb"/>
+      		</div> 
+					<div id="spare_container" class="panel-body">
+						<h4 id="spare_heading">Add Location</h4>
+					</div> 
+    		</div>
+  	</div>
+  </body>
+</html>
