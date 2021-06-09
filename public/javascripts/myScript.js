@@ -7,21 +7,21 @@ function Refresh(){
 	let urlHistory="https://qwikswitch.com/api/v1/history/"
   $.get(urlAPIKey, function(APIKey, status){
 
-  }).done(function(dataAPIKey){
+	}).done(function(dataAPIKey){
 	 	$.get(urldeviceIDs, function(datadeviceID, status){
    	}).done(function(datadeviceID){
   	  let dataLength=datadeviceID.length
                 
       for(x=0;x<datadeviceID.length;x++){
-                     
       	let urlHistoryParams=dataAPIKey[0].key + '/?date=' + histDate + '&devices=' + datadeviceID[x].deviceID + '&option=_lastIndex_'
         let deviceID=datadeviceID[x].deviceID
 				
         $.get(urlHistory+urlHistoryParams, function(datadeviceID, status){
                 
         }).done(function(datadeviceID){
-				
-        	let Location=datadeviceID[deviceID].name
+					console.log(datadeviceID[deviceID].name)
+					console.log(datadeviceID[deviceID].data.output[0][1])
+					let Location=datadeviceID[deviceID].name
           let currentLevel=datadeviceID[deviceID].data.output[0][1]
 					switch(Location){
 
@@ -129,7 +129,9 @@ function setDimmer(Location,event,ui){
     	
 			urlLightControl=urlLightControl + dataAPIKey[0].key + '?device='+datadeviceID.deviceID + '&setlevel=' + ui.value
       $.get(urlLightControl, function(data, status){
-      });
+      	console.log(datadeviceID.Location)             
+				console.log(data.level)  
+			});
     });
   });
 };
@@ -155,12 +157,15 @@ function setLight(Location,history){
         	urlControl=urlControl + dataAPIKey[0].key + '?device='+datadeviceID.deviceID + '&setlevel=100'
           $.get(urlControl, function(data, status){
           }).done(function(data){
-                               
+						console.log("Success")
+						console.log(data.success)
+						console.log(datadeviceID.Location)             
+						console.log(data.level)    
+						
           	if(Location=='WaterFeature'){
-						//updateDisplay(Location,currentState,"ON","Light OFF")
-            $("#" + Location.toLowerCase() +  "Value").text("ON");
-            $("#" + Location.toLowerCase() +  "Switch").text("Pump OFF");
-            $("#" + Location.toLowerCase() + "lightBulb").show();
+							$("#" + Location.toLowerCase() +  "Value").text("ON");
+            	$("#" + Location.toLowerCase() +  "Switch").text("Pump OFF");
+            	$("#" + Location.toLowerCase() + "lightBulb").show();
 						}
 						else{
 							$("#" + Location.toLowerCase() +  "Value").text("ON");
@@ -174,7 +179,11 @@ function setLight(Location,history){
         	urlControl=urlControl + dataAPIKey[0].key + '?device='+datadeviceID.deviceID + '&setlevel=0'
           $.get(urlControl, function(data, status){
           }).done(function(data){
-                                        
+						console.log("Success")
+						console.log(data.success)
+						console.log(datadeviceID.Location)             
+						console.log(data.level) 
+
 						if(Location=='WaterFeature'){
 							//updateDisplay(Location,currentState,"ON","Light OFF")
 							$("#" + Location.toLowerCase() +  "Value").text("OFF");
